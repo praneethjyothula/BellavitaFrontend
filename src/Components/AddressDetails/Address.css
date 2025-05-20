@@ -1,0 +1,206 @@
+.address-form-container{
+    display: flex;
+    gap: 10px;
+    width: 500px;
+    flex-direction: column;
+}
+
+.address-form-container label{
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    
+    
+}
+
+.address-form-container input{
+    outline: none;
+    border-width: 0px;
+    border: 1px solid black;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.address-form-container input::placeholder{
+    font-family: "Poppins", sans-serif;
+
+}
+
+.address-h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.address-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.confirm-order-btn {
+    position: relative;
+    /* padding: 1rem 2rem; */
+    padding: 2px;
+    font-size: 1rem;
+    width: 250px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.696);
+    background: none;
+    
+    border: 2px solid rgba(0, 0, 0, 0.696);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+
+
+  
+  .confirm-order-btn {
+    background: linear-gradient(rgba(0, 0, 0, 0.696) 0 0) no-repeat calc(200% - var(--p, 0%))
+      100% / 200% var(--p, 0.2em);
+    transition: 0.3s var(--t, 0s),
+      background-position 0.3s calc(0.3s - var(--t, 0s));
+      
+  }
+  
+  .confirm-order-btn:hover {
+    --p: 100%;
+    --t: 0.3s;
+    color: #fff;
+    
+    
+  }
+
+
+  .address-error-msg{
+    color: rgba(255, 0, 0, 0.623);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+
+  }
+
+  .confirm-image{
+    width: 250px;
+  }
+
+  .order-h1{
+     font-family: "Poppins", sans-serif;
+     font-size: 30px;
+     color: rgba(0, 0, 0, 0.829);
+    
+  }
+
+  .confirm-order-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+  }
+
+  .order-details-container p{
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+  }
+  .order-details-container span{
+
+    color: rgba(0, 0, 0, 0.653);
+    font-size: 14px;
+
+  }
+
+  .home-button {
+    position: relative;
+    /* padding: 1rem 2rem; */
+    padding: 2px;
+    font-size: 1rem;
+    width: 150px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.696);
+    margin-bottom: 40px;
+    background: none;
+    
+    border: 2px solid rgba(0, 0, 0, 0.696);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+
+
+  
+  .home-button {
+    background: linear-gradient(rgba(0, 0, 0, 0.696) 0 0) no-repeat calc(200% - var(--p, 0%))
+      100% / 200% var(--p, 0.2em);
+    transition: 0.3s var(--t, 0s),
+      background-position 0.3s calc(0.3s - var(--t, 0s));
+      
+  }
+  
+  .home-button:hover {
+    --p: 100%;
+    --t: 0.3s;
+    color: #fff;
+    
+    
+  }
+
+  @media screen and (max-width:600px) {
+    .address-form-container{
+        width: 60vw;
+    }
+    
+  }
+
+  @media screen and (max-width:300px) {
+
+    .confirm-order-btn{
+        width: 50vw;
+    }
+
+    .address-h1{
+        font-size: 18px;
+    }
+    
+  }
+
+  @media  screen and (max-width:550px) {
+
+    .confirm-order-span-item{
+        display: inline;
+    }
+    
+  }
+
+  @media screen and (max-width:450px) {
+    .confirm-order-span-item{
+        font-size: 10px;
+    }
+
+    .confirm-order-container p{
+        font-size: 12px;
+    }
+    
+  }
+
+
+  @media screen and (max-width:300px){
+    .confirm-image{
+        width: 80vw;
+    }
+
+    .order-h1{
+        font-size: 15px;
+    }
+  }
