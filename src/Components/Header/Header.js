@@ -34,6 +34,7 @@ function Header() {
 
     const toLogout = () =>{
         Cookies.remove('jwtToken')
+        window.location.reload()
         navigate('/')
        
         
