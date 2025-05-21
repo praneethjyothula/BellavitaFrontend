@@ -34,7 +34,7 @@ function Header() {
 
     const toLogout = () =>{
         Cookies.remove('jwtToken')
-        navigate(0)
+        navigate('/')
        
         
     }
