@@ -53,7 +53,7 @@ function Register() {
 
         }
 
-        const mainResult = await axios.post('http://localhost:4000/register',options)
+        const mainResult = await axios.post('https://bellavitabackend-production.up.railway.app/register',options)
        
         const result = mainResult.data
 

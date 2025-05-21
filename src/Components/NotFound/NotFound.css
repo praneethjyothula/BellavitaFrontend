@@ -1,0 +1,21 @@
+.not-found-header{
+    background-color: #1E1E1E;
+}
+
+.not-logo{
+    font-size: 150px ;
+}
+
+.not-h1{
+     font-family: "Poppins", sans-serif;
+     text-align: center;
+     font-size: 40px;
+}
+
+.not-found{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}

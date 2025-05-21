@@ -39,7 +39,7 @@ function Cart() {
 
         
 
-        let result = await axios.post('http://localhost:4000/toGetCart',{data:{Username:name}}, { headers: headers })
+        let result = await axios.post('https://bellavitabackend-production.up.railway.app/toGetCart',{data:{Username:name}}, { headers: headers })
 
         console.log(result)
 
@@ -55,7 +55,7 @@ function Cart() {
 
         const token = Cookies.get('jwtToken')
         const headers = { Authorization: `Bearer ${token}` }
-        let result = await axios.post(`http://localhost:4000/toDeleteData/${ID}`,{data:{Username:name}}, { headers: headers })
+        let result = await axios.post(`https://bellavitabackend-production.up.railway.app/toDeleteData/${ID}`,{data:{Username:name}}, { headers: headers })
 
 
         toGetData()

@@ -40,7 +40,7 @@ function Login() {
             body: data
         };
 
-        const getResult = await axios.post('http://localhost:4000/login', options)
+        const getResult = await axios.post('https://bellavitabackend-production.up.railway.app/login', options)
 
         const mainData = await getResult.data
 
@@ -50,6 +50,7 @@ function Login() {
             setErrorMsg(mainData)
         }else{
            await Cookies.set('jwtToken', mainData.jwtToken, { expires: 30 })
+           localStorage.setItem('name',mainData.CustomerName)
             navigate('/',{replace:true})
            
             

@@ -63,7 +63,7 @@ function EachProduct() {
     const toGetEachData = async () => {
 
 
-        const result = await axios.get(`http://localhost:4000/category/${category}/${id}`)
+        const result = await axios.get(`https://bellavitabackend-production.up.railway.app/category/${category}/${id}`)
 
         setData(result.data)
 
@@ -91,7 +91,7 @@ function EachProduct() {
         const headers = { Authorization: `Bearer ${token}` }
 
 
-        let MainResult = await axios.post('http://localhost:4000/postCart', { data: { ...data, quantity: quantity,Username:name } }, { headers: headers })
+        let MainResult = await axios.post('https://bellavitabackend-production.up.railway.app/postCart', { data: { ...data, quantity: quantity,Username:name } }, { headers: headers })
 
         let resultData = MainResult.data
 

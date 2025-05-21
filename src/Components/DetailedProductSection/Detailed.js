@@ -39,7 +39,7 @@ function Detailed(){
     
 
     const toGetDEtailedData = async () =>{
-        const url = `http://localhost:4000/category/${category}?order=${selectValue}`
+        const url = `https://bellavitabackend-production.up.railway.app/category/${category}?order=${selectValue}`
 
         const result = await axios.get(url)
 

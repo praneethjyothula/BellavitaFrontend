@@ -47,7 +47,7 @@ function EachItem(props) {
         const headers = { Authorization: `Bearer ${token}` }
 
 
-        let MainResult = await axios.post('http://localhost:4000/postCart', { data: { ...eachData, quantity: 1,Username:name } }, { headers: headers })
+        let MainResult = await axios.post('https://bellavitabackend-production.up.railway.app/postCart', { data: { ...eachData, quantity: 1,Username:name } }, { headers: headers })
 
         let resultData = await MainResult.data
 

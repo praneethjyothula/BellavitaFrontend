@@ -39,7 +39,7 @@ function Address(){
 
         const name = localStorage.getItem('name')
 
-        const resultData = await axios.post('http://localhost:4000/toDeleteAll',{data:{Username:name}},{headers:headers}) 
+        const resultData = await axios.post('https://bellavitabackend-production.up.railway.app/toDeleteAll',{data:{Username:name}},{headers:headers}) 
 
 
 

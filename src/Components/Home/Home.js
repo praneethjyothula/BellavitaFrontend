@@ -48,7 +48,7 @@ function Home() {
    
     
     const toGetApiData = async () =>{
-        const url = 'http://localhost:4000/toGetData'
+        const url = 'https://bellavitabackend-production.up.railway.app/toGetData'
         const result = await axios.get(url)
         toGetData([result.data])
         setArrivalData([result.data[7],result.data[17],result.data[27],result.data[37]])
